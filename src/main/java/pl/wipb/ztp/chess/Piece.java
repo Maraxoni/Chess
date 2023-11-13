@@ -1,11 +1,6 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package pl.wipb.ztp.chess;
 
 import java.io.IOException;
-import java.awt.image.ImageObserver;
 import java.awt.Graphics2D;
 import java.awt.Image;
 
@@ -50,7 +45,7 @@ class Piece implements IPiece
 
 	static {
 		try {
-			Piece.image = ChessboardDone.getImage("pieces4.png");
+			Piece.image = ChessboardMain.getImage("pieces4.png");
 		}
 		catch (IOException e) {
 			e.printStackTrace();

@@ -1,7 +1,3 @@
-// 
-// Decompiled by Procyon v0.5.36
-// 
-
 package pl.wipb.ztp.chess;
 
 import java.awt.Graphics2D;

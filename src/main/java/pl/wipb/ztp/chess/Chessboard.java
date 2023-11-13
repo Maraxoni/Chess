@@ -7,16 +7,12 @@ package pl.wipb.ztp.chess;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.Dimension;
-import java.util.Iterator;
 import java.awt.Graphics2D;
 import java.util.Map;
-import java.awt.image.ImageObserver;
 import java.awt.Graphics;
 import javax.swing.JButton;
 import java.awt.geom.AffineTransform;
@@ -79,7 +75,7 @@ class Chessboard extends JPanel
 		this.board.put(new Point(5, 6), new Decorator(new Piece(0, 5, 6), tr));
 		this.board.put(new Point(6, 5), new Decorator(new Piece(0, 6, 5), tr));
 		this.board.put(new Point(7, 4), new Decorator(new Piece(0, 7, 4), tr));
-		this.image = ChessboardDone.getImage("board3.png");
+		this.image = ChessboardMain.getImage("board3.png");
 		this.setPreferredSize(new Dimension(this.image.getWidth(null), this.image.getHeight(null)));
 		this.addMouseListener(new MouseAdapter() {
 			@Override
